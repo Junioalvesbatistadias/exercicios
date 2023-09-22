@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+    <link rel="stylesheet" href="pratica3_ex1.css">
+    <script src="pratica3_ex1.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Postagens</h1>
+        <input id="numero" type="number" min="1" max="100" value="1">
+        <button onclick="getPostagem(numero.value)">Buscar</button>
+        <button onclick="getPostagens()">Buscar</button>
+        <button onclick="postPostagens()">Enviar</button>
+        <button onclick="atualizarPostagens()">Atualizar</button>
+        <button onclick="modificarPostagens(numero.value)">Modificar</button>
+        <button onclick="removerPostagem(numero.value)">Remover</button>
+        <button onclick="filtrarPostagens(usuario.value)">Filtrar</button>
+        <div id="resp">
+
+            <p class="campo">Resposta:</p>
+            <p id="respjson1"></p>
+            <p id="respjson2"></p>
+            <p id="respjson3"></p>
+            <p id="respjson4"></p>
+            <p id="respjson5"></p>
+            <p id="respjson6"></p>
+            <p id="respjson7"></p>
+        </div>
+
+    </main>
+</body>
+
+</html>
